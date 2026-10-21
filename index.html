@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web Museu del Joguet d'Almassora</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+:root{--bg:#f7f4ee;--fg:#1d2a28;--muted:#5b6b67;--panel:#ffffff;--deep:#173b3a;--gold:#c9a24a;--line:#dcd6ca;
+--display:"Fraunces",Georgia,serif;--body:"Source Sans 3",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root{--bg:#121a19;--fg:#e9e4da;--muted:#a3b0ac;--panel:#1a2625;--deep:#0e2a29;--line:#2c3a38;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.6 var(--body)}
+.wrap{max-width:900px;margin:0 auto;padding:0 16px}
+header{background:var(--deep);color:#f3eee4;padding:48px 0 40px}
+.eyebrow{color:var(--gold);font-weight:600;letter-spacing:.08em;text-transform:uppercase;font-size:13px}
+h1{font-family:var(--display);font-size:clamp(30px,6vw,48px);line-height:1.1;margin:12px 0;text-wrap:balance}
+header p{margin:0;opacity:.85}
+.pdf{display:inline-block;margin-top:20px;color:var(--deep);background:var(--gold);padding:10px 16px;border-radius:6px;font-weight:600;text-decoration:none}
+nav{display:flex;flex-wrap:wrap;gap:8px 16px;padding:16px 0;border-bottom:1px solid var(--line);font-size:15px}
+nav a{color:var(--muted)}
+section{padding:32px 0;border-bottom:1px solid var(--line)}
+h2{font-family:var(--display);font-size:26px;margin:0 0 4px}
+.sub{color:var(--muted);margin:0 0 18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.box{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:16px 18px}
+.box h3{margin:0 0 6px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold)}
+ul{margin:0;padding-left:20px}
+ol{padding-left:22px}
+.note{margin-top:16px;color:var(--muted);font-style:italic}
+footer{padding:24px 0;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="eyebrow">Museu del Joguet d'Almassora</div>
+<h1>Una web para contar la historia de Almassora a través del juguete</h1>
+<p>Requisitos para el equipo de desarrollo · Web pública para visitantes y área privada de gestión</p>
+<a class="pdf" href="presentacion-museu.pdf">Descargar presentación (PDF)</a>
+</div></header>
+<div class="wrap">
+<nav><a href="#museo">El museo</a><a href="#proyecto">El proyecto</a><a href="#publica">Web pública</a><a href="#perfiles">Perfiles</a><a href="#visitas">Visitas</a><a href="#gastos">Gastos</a><a href="#seguridad">Seguridad</a><a href="#entrega">Entrega</a></nav>
+
+<section id="museo"><h2>El Museu del Joguet d'Almassora</h2>
+<p class="sub">Un museo nacido de una colección familiar y de la historia de una juguetería local.</p>
+<div class="grid">
+<div class="box"><h3>Origen</h3>La colección empezó a formarse tras la Guerra Civil. A partir de la única juguetería que había en el pueblo, ha ido acompañando a muchas generaciones.</div>
+<div class="box"><h3>La colección</h3>Más de mil juguetes antiguos, del siglo XIX al XXI. Cartón, hojalata, madera, barro, porcelana, goma y plásticos muestran cómo cambiaron los materiales y la fabricación.</div>
+</div><p class="note">El museo abrió sus puertas el 22 de diciembre de 2010.</p></section>
+
+<section id="proyecto"><h2>El proyecto</h2>
+<p class="sub">Dos áreas conectadas por una misma identidad digital.</p>
+<div class="grid">
+<div class="box"><h3>Web pública</h3>Información del museo, colección, fotografías, horarios y cómo organizar una visita.</div>
+<div class="box"><h3>Área privada</h3>Calendario y registro de visitas para empleados. Archivo y control de gastos para contabilidad.</div>
+</div><p class="note">El personal del museo debe poder actualizar contenidos y registros.</p></section>
+
+<section id="publica"><h2>La experiencia de quien visita</h2>
+<p class="sub">La web debe responder rápido a tres preguntas: qué es, qué puedo ver y cómo voy.</p>
+<ul><li>Historia del museo y de la colección familiar</li><li>Piezas destacadas, materiales y épocas</li><li>Fotografías y exposiciones temporales</li><li>Horarios, precios, ubicación y accesibilidad</li><li>Agenda y visitas guiadas</li><li>Contacto y solicitud de visita</li><li>Castellano, inglés, francés y valenciano</li><li>Adaptada a móvil, tableta y ordenador</li></ul></section>
+
+<section id="perfiles"><h2>Dos perfiles con permisos distintos</h2>
+<div class="grid">
+<div class="box"><h3>Empleado</h3><ul><li>Crear y organizar visitas concertadas</li><li>Consultar calendario y detectar conflictos</li><li>Registrar visitas realizadas y asistencia</li><li>Buscar y exportar listados de actividad</li></ul></div>
+<div class="box"><h3>Contabilidad</h3><ul><li>Registrar compras y gastos</li><li>Fotografiar o adjuntar tickets y facturas</li><li>Clasificar y recuperar documentos</li><li>Preparar listados por periodo y categoría</li></ul></div>
+</div><p class="note">Cada persona accede solo a las funciones y documentos que necesita.</p></section>
+
+<section id="visitas"><h2>Cómo se organiza una visita</h2>
+<ol><li><strong>Solicitud o alta de la visita:</strong> contacto, grupo, fecha, horario, número estimado y tipo de visita.</li>
+<li><strong>Confirmación en el calendario:</strong> estados claros y aviso de posibles solapamientos.</li>
+<li><strong>Realización y registro:</strong> el empleado marca la visita como realizada y registra asistentes.</li></ol>
+<p class="note">Después: búsquedas, informes y exportación de datos.</p></section>
+
+<section id="gastos"><h2>Gastos y justificantes en un solo archivo</h2>
+<p class="sub">Cada gasto se registra una vez y queda vinculado a su documento.</p>
+<ul><li>Fecha, proveedor, concepto, importe, impuestos y forma de pago</li><li>Categorías configurables: compras, nóminas, Seguridad Social, Hacienda, suministros y otras</li><li>Fotografía desde móvil o tableta y adjuntos en imagen o PDF</li><li>Búsqueda por fecha, proveedor, categoría, importe y estado</li><li>Informes con totales y exportación a CSV o Excel</li></ul>
+<p class="note">La primera versión archiva y lista documentos; no presenta impuestos ni ejecuta pagos.</p></section>
+
+<section id="seguridad"><h2>Seguridad y continuidad</h2>
+<div class="grid">
+<div class="box"><h3>Privacidad</h3>Recoger solo los datos necesarios. Limitar el acceso y acordar los plazos de conservación.</div>
+<div class="box"><h3>Seguridad</h3>Conexión HTTPS, cuentas individuales, contraseñas seguras y registro de cambios relevantes.</div>
+<div class="box"><h3>Copias y recuperación</h3>Copias automáticas de base de datos y documentos. Procedimiento de restauración documentado.</div>
+</div><p class="note">El museo conserva sus textos, fotografías y datos, y puede exportarlos. Accesibilidad, uso móvil, soporte y costes de mantenimiento deben quedar especificados.</p></section>
+
+<section id="entrega"><h2>Qué debe entregar el equipo</h2>
+<div class="grid">
+<div class="box"><h3>Propuesta y entrega</h3><ul><li>Diseño preliminar y tecnologías propuestas</li><li>Presupuesto desglosado y calendario por fases</li><li>Plan de seguridad, copias y mantenimiento</li><li>Documentación de uso, formación y credenciales</li><li>Titularidad del dominio, contenidos y datos</li></ul></div>
+<div class="box"><h3>Pruebas de aceptación</h3><ul><li>Actualizar la web pública desde el gestor</li><li>Crear, confirmar y cerrar una visita</li><li>Registrar un gasto y adjuntar una foto</li><li>Comprobar permisos entre los dos perfiles</li><li>Exportar datos y demostrar restauración</li></ul></div>
+</div><p class="note">Resultado esperado: una web útil para visitantes y una herramienta clara para el trabajo diario.</p></section>
+<footer>Museu del Joguet d'Almassora · Requisitos web</footer>
+</div>
+</body>
+</html>
